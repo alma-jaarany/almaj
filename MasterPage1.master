@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border:solid Violet;
+  width: 100%;
+  text-align: center;
+}
+
+td, th {
+  border:2px solid Violet;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<center>
+<table>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</center>
+</body>
+</html>
