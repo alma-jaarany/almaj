@@ -3,23 +3,34 @@
 <!DOCTYPE html>
 
 <html>
-<head>
+    <head>
+        <title>alma</title>
+    <style>
+
+    .color {
+        color: aquamarine;
+        background-color:antiquewhite;
+    }
+    </style>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
+
+
+
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
             <table>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><a href="אודות.aspx">אודות</a></td>
+                    <td> <a href="גלריה.aspx">גלריה</a></td>
+                    <td><a href="דף-הבית.aspx">דף-הבית</a></td>
+                    <td><a href="הרשמה.aspx">הרשמה</a></td>
+                    <td><a href="חיפוש.aspx">חיפוש</a></td>
+                    <td><a href="יציאה.aspx">יציאה</a></td>
+                    <td><a href="כניסה.aspx">כניסה</a></td>
+                    <td><a href="מנהל.aspx">מנהל</a></td>
+                    <td><a href="עדכון-פרטים.aspx">עדכון-פרטים</a></td>
                 </tr>
             </table>
         </asp:ContentPlaceHolder>
