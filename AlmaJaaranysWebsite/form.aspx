@@ -7,7 +7,9 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-
+   <input type="text" name="firstName" id="firstName"/>הכנס את השם הפרטי שלך
+ <input type="submit" name="submit" id="submit"/><br/>
+ name = <%=name %>
 </asp:Content>
 
 
