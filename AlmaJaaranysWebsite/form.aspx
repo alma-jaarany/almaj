@@ -7,8 +7,7 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-   <input type="text" name="firstName" id="firstName"/>
-    שם פרטי:
+    שם פרטי:<input type="text" name="firstName" id="firstName"/>
     <br/>
     מקצועות אהובים:
     <br/>
@@ -27,7 +26,9 @@
     <textarea rows="5" cols="20" name="textarea1" id="textarea1" placeholder="הכנס מלל חופשי"></textarea>
     <br/>
  <input type="submit" name="submit" id="submit"/> <br/>
- name = <%=name %>
+    name = <%=name %>
+    subjects = <%=check2 %>
+    animal = <%=radio1 %>
 </asp:Content>
 
 
