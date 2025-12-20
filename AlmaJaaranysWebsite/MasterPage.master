@@ -23,6 +23,9 @@
             <table>
                 <tr><td>כותרת לאתר</td></tr>
                     <tr>
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+                    </tr>
+                    <tr>
                         <td><a href="אודות.aspx">אודות</a></td>
                         <td><a href="גלריה.aspx">גלריה</a></td>
                         <td><a href="דף-הבית.aspx">דף-הבית</a></td>
@@ -33,10 +36,12 @@
                         <td><a href="מנהל.aspx">מנהל</a></td>
                         <td><a href="עדכון-פרטים.aspx">עדכון-פרטים</a></td>
                    </tr>
-                        <tr style="height:600px">
+                   <tr>
+                        <td style="height:600px">
                          <asp:ContentPlaceHolder ID="MainContent" runat="server">
                          </asp:ContentPlaceHolder>
-                       </tr>
+                       </td>
+                  </tr>
             </table>
 </body>
 </html>
