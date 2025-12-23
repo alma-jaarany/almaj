@@ -26,9 +26,9 @@
     <textarea rows="5" cols="20" name="radio1" id="textarea1" placeholder="הכנס מלל חופשי"></textarea>
     <br/>
  <input type="submit" name="submit" id="submit"/> <br/>
-    name = <%=name %>
-    subjects = <%=check2 %>
-    animal = <%=radio1 %>
+    שם = <%=name %>
+    מקצועות = <%=check2 %>
+    חיות = <%=radio1 %>
 </asp:Content>
 
 

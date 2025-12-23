@@ -12,8 +12,8 @@ public partial class form : System.Web.UI.Page
     public string radio1;
     protected void Page_Load(object sender, EventArgs e)
     {
-        string name = Request.Form["firstName"];
-        string check2 = Request.Form["check2"];
-        string radio1 = Request.Form["radio1"];
+        name = Request.Form["firstName"];
+        check2 = Request.Form["check2"];
+        radio1 = Request.Form["radio1"];
     }
 }
