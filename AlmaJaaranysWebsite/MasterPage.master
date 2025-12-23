@@ -37,17 +37,17 @@
                 <td><a href="דף-הבית.aspx">
                     <img src="images/דף-הבית.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="הרשמה.aspx">
-                    <img src="images/הרשמה.png" /><img src="https://e7.pngegg.com/pngimages/621/577/png-clipart-computer-icons-login-symbol-login-interface-miscellaneous-text.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/הרשמה.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="חיפוש.aspx">
-                    <img src="https://icons.veryicon.com/png/o/miscellaneous/light-e-treasure-3/search-286.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/חיפוש.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="יציאה.aspx">
-                    <img src="https://static.thenounproject.com/png/2965977-200.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/יציאה.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="כניסה.aspx">
-                    <img src="https://w7.pngwing.com/pngs/654/550/png-transparent-computer-icons-login-login-button-miscellaneous-angle-text-thumbnail.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/כניסה.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="מנהל.aspx">
-                    <img src="https://cdn-icons-png.flaticon.com/512/10270/10270032.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/מנהל.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="עדכון-פרטים.aspx">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Refresh_icon.svg/1200px-Refresh_icon.svg.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/עדכון-פרטים.png" style="width:150px;height:75px;"></a></td>
             </tr>
             <tr>
                 <td style="height: 600px">
