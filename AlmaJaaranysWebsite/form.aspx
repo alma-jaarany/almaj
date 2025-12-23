@@ -23,7 +23,7 @@
     <input type="radio" name="radio1" value="דג" id="animal3"/>דג<br/>
     <input type="radio" name="radio1" value="ארנב" id="animal4"/>ארנב<br/>
     חיה אחרת:
-    <textarea rows="5" cols="20" name="textarea1" id="textarea1" placeholder="הכנס מלל חופשי"></textarea>
+    <textarea rows="5" cols="20" name="radio1" id="textarea1" placeholder="הכנס מלל חופשי"></textarea>
     <br/>
  <input type="submit" name="submit" id="submit"/> <br/>
     name = <%=name %>
