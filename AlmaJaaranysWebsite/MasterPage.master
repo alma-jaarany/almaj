@@ -16,32 +16,46 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-
+    <form runat="server">
 
 
       
-            <table>
-                <tr><td>כותרת לאתר</td></tr>
-                    <tr>
-                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
-                    </tr>
-                    <tr>
-                        <td><a href="אודות.aspx"><img src="https://cdn-icons-png.freepik.com/256/11062/11062103.png" /></a></td>
-                        <td><a href="גלריה.aspx"><img src="https://cdn-icons-png.flaticon.com/512/1375/1375157.png" /></a></td>
-                        <td><a href="דף-הבית.aspx"></a><img src="https://img.favpng.com/19/15/5/home-page-icon-png-favpng-mPgPyMWPeyyiUwsDFMrrMUnxH.jpg" /></td>
-                        <td><a href="הרשמה.aspx"></a><img src="https://e7.pngegg.com/pngimages/621/577/png-clipart-computer-icons-login-symbol-login-interface-miscellaneous-text.png" /></td>
-                        <td><a href="חיפוש.aspx"><img src="https://icons.veryicon.com/png/o/miscellaneous/light-e-treasure-3/search-286.png" /></a></td>
-                        <td><a href="יציאה.aspx"><img src="https://static.thenounproject.com/png/2965977-200.png" /></a></td>
-                        <td><a href="כניסה.aspx"><img src="https://w7.pngwing.com/pngs/654/550/png-transparent-computer-icons-login-login-button-miscellaneous-angle-text-thumbnail.png" /></a></td>
-                        <td><a href="מנהל.aspx"><img src="https://cdn-icons-png.flaticon.com/512/10270/10270032.png" /></a></td>
-                        <td><a href="עדכון-פרטים.aspx"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Refresh_icon.svg/1200px-Refresh_icon.svg.png" /></a></td>
-                   </tr>
-                   <tr>
-                        <td style="height:600px">
-                         <asp:ContentPlaceHolder ID="MainContent" runat="server">
-                         </asp:ContentPlaceHolder>
-                       </td>
-                  </tr>
-            </table>
+        <table>
+            <tr>
+                <th>כותרת לאתר</th>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td><a href="אודות.aspx">
+                    <img src="https://cdn-icons-png.freepik.com/256/11062/11062103.png" style="width:100px;height:100px;"></a></td>
+                <td><a href="גלריה.aspx">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1375/1375157.png" style="width:100px;height:100px;"></a></td>
+                <td><a href="דף-הבית.aspx">
+                    <img src="https://icons.veryicon.com/png/o/system/rounded-linear-icon/homepage-27.png" style="width:100px;height:100px;"></a></td>
+                <td><a href="הרשמה.aspx">
+                    <img src="https://e7.pngegg.com/pngimages/621/577/png-clipart-computer-icons-login-symbol-login-interface-miscellaneous-text.png" style="width:100px;height:100px;"></a></td>
+                <td><a href="חיפוש.aspx">
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/light-e-treasure-3/search-286.png" style="width:100px;height:100px;"></a></td>
+                <td><a href="יציאה.aspx">
+                    <img src="https://static.thenounproject.com/png/2965977-200.png" style="width:100px;height:100px;"></a></td>
+                <td><a href="כניסה.aspx">
+                    <img src="https://w7.pngwing.com/pngs/654/550/png-transparent-computer-icons-login-login-button-miscellaneous-angle-text-thumbnail.png" style="width:100px;height:100px;"></a></td>
+                <td><a href="מנהל.aspx">
+                    <img src="https://cdn-icons-png.flaticon.com/512/10270/10270032.png" style="width:100px;height:100px;"></a></td>
+                <td><a href="עדכון-פרטים.aspx">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Refresh_icon.svg/1200px-Refresh_icon.svg.png" style="width:100px;height:100px;"></a></td>
+            </tr>
+            <tr>
+                <td style="height: 600px">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        </form>
 </body>
 </html>
