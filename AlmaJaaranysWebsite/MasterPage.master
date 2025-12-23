@@ -22,7 +22,7 @@
       
         <table>
             <tr>
-                <th>כותרת לאתר</th>
+                <th style="font-size: 75px" text-align: center;>כותרת לאתר</th>
             </tr>
             <tr>
                 <td>
