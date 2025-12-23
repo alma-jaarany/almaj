@@ -22,7 +22,7 @@
       
         <table style="width: 100%; height: 100%;">
             <tr>
-                <th style="font-size: 75px; text-align: center; color: #97cec8;" colspan="9">כותרת לאתר</th>
+                <th style="font-size: 75px; text-align: center; color: #97cec8; font-family: Assistant;" colspan="9">כותרת לאתר</th>
             </tr>
             <tr>
                 <td>
@@ -50,7 +50,7 @@
                     <img src="images/עדכון-פרטים.png" style="width:150px;height:75px;"></a></td>
             </tr>
             <tr style="height: 100%;">
-                <td style="background-color:#caece8; height: 100%; direction: rtl; padding-right: 50px; font-size: 20px; color: #6eaaa3;" colspan="9">
+                <td style="background-color:#caece8; height: 100%; direction: rtl; padding-right: 50px; font-size: 20px; color: #6eaaa3; font-family: Assistant;" colspan="9">
                     <asp:ContentPlaceHolder ID="MainContent" runat="server">
                     </asp:ContentPlaceHolder>
                 </td>
