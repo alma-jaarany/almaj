@@ -3,8 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
-    הרשמה
+    <strong> הרשמה לאתר:</strong>
+    <br/>
       <strong>שם פרטי:</strong> <input type="text" name="firstName1" id="firstName" style="border: 1px solid #6eaaa3"/>
+   <br/>
+      <strong>שם משפחה:</strong> <input type="text" name="firstName2" id="firstName2" style="border: 1px solid #6eaaa3"/>
    <br/>
    <strong>מקצועות אהובים:</strong>
    <br/>
