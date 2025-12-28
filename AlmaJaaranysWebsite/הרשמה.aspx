@@ -13,8 +13,8 @@
     <br />
     <selections>
         <strong>מספר טלפון:</strong>
-        <input type="text" name="phone" id="number" style="border: 1px solid #6eaaa3" />
-        <select name="age" id="age" style="border: 1px solid #6eaaa3;">
+        <input type="text" name="phone1" id="number" style="border: 1px solid #6eaaa3" />
+        <select name="phone2" id="age" style="border: 1px solid #6eaaa3;">
             <option value="0">050</option>
             <option value="2">052</option>
             <option value="3">053</option>
@@ -46,5 +46,6 @@
         שם = <%=name %>
    מקצועות = <%=check3 %>
    חיות = <%=radio2 %>
+        phonenumber = <%=phonenumber %>
 </asp:Content>
 
