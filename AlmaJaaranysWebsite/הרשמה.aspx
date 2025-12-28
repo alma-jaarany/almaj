@@ -24,6 +24,7 @@
    <input type="radio" name="radio2" value="3" id="animal4"/>3<br/>
    <input type="radio" name="radio2" value="4" id="animal5"/>לא יודע/ת בינתיים<br/>
    <textarea rows="1" cols="20" name="radio1" id="textarea1" placeholder="מספר אחר: " style="border: 1px solid #6eaaa3;"></textarea>
+    <br/>
    <strong>חיה אחרת:</strong>
    <textarea rows="1" cols="20" name="radio2" id="textarea2" placeholder="הכנס מלל חופשי" style="border: 1px solid #6eaaa3;"></textarea>
    <br/>
