@@ -14,8 +14,8 @@
    <input type="checkbox" name="check3" checked value="אימוץ" id="subject1"/>אני רוצה לאמץ כלב<br/>
    <input type="checkbox" name="check3" value="אימוץ עתידי" id="subject2"/>מתכננת בעתיד לאמץ כלב<br/>
    <input type="checkbox" name="check3" value="להביא" id="subject3"/>אני רוצה להביא כלב<br/>
-   <input type="checkbox" name="check3" value="הורים" id="subject4"/>אני מנסה לשכנע את ההורים
-   <br/>
+   <input type="checkbox" name="check3" value="הורים" id="subject4"/>אני מנסה לשכנע את ההורים<br/>
+    <input type="checkbox" name="check3" value="אחר" id="subject5"/>אחר<br/>
    <strong>כמה כלבים אני רוצה לאמץ: </strong>
    <br/>
    <input type="radio" name="radio2" checked value="0" id="animal1"/>0<br/>
