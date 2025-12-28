@@ -11,10 +11,19 @@
    <br/>
     <selections>
       <strong>מספר טלפון:</strong>
-      <input type="text" name="phone" id="number" style="border: 1px solid #6eaaa3"/><select name="age" id="age" style="border: 1px solid #6eaaa3;">
-         <option value="under13">מתחת לגיל 13</option>
-         <option value="13-18">בין גיל 13 ל-18</option>
-         <option value="18+">מעל גיל 18</option>
+      <input type="text" name="phone" id="number" style="border: 1px solid #6eaaa3"/>
+        <select name="age" id="age" style="border: 1px solid #6eaaa3;">
+         <option value="0"> 050</option>
+         <option value="1">051</option>
+         <option value="2">052</option>
+         <option value="3">053</option>
+         <option value="4">054</option>
+         <option value="5">055</option>
+         <option value="6">056</option>
+         <option value="7">057</option>
+         <option value="8">058</option>
+         <option value="9">059</option>
+
       </select>
         <br/>
    <strong>מדוע אני נרשם לאתר: </strong>
