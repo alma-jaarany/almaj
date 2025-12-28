@@ -11,10 +11,10 @@
    <br/>
    <strong>מדוע אני נרשם לאתר: </strong>
    <br/>
-   <input type="checkbox" name="check3" checked value="1" id="subject1"/>מתמטיקה<br/>
-   <input type="checkbox" name="check3" value="פיזיקה" id="subject2"/>פיזיקה<br/>
-   <input type="checkbox" name="check3" value="מדמח" id="subject3"/>מדעי המחשב<br/>
-   <input type="checkbox" name="check3" value="ספורט" id="subject4"/>ספורט
+   <input type="checkbox" name="check3" checked value="אימוץ" id="subject1"/>אני רוצה לאמץ כלב<br/>
+   <input type="checkbox" name="check3" value="אימוץ עתידי" id="subject2"/>מתכננת בעתיד לאמץ כלב<br/>
+   <input type="checkbox" name="check3" value="להביא" id="subject3"/>אני רוצה להביא כלב<br/>
+   <input type="checkbox" name="check3" value="הורים" id="subject4"/>אני מנסה לשכנע את ההורים
    <br/>
    <strong>כמה כלבים אני רוצה לאמץ: </strong>
    <br/>
@@ -24,7 +24,7 @@
    <input type="radio" name="radio2" value="3" id="animal4"/>3<br/>
    <input type="radio" name="radio2" value="4" id="animal5"/>לא יודע/ת בינתיים<br/>
    <textarea rows="1" cols="20" name="radio1" id="textarea1" placeholder="מספר אחר: " style="border: 1px solid #6eaaa3;"></textarea>
-    <br/>
+   <br/>
    <strong>חיה אחרת:</strong>
    <textarea rows="1" cols="20" name="radio2" id="textarea2" placeholder="הכנס מלל חופשי" style="border: 1px solid #6eaaa3;"></textarea>
    <br/>
