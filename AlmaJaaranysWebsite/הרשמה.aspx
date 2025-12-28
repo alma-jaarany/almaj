@@ -7,8 +7,16 @@
     <br/>
       <strong>שם פרטי:</strong> <input type="text" name="firstName1" id="firstName" style="border: 1px solid #6eaaa3"/>
    <br/>
-      <strong>שם משפחה:</strong> <input type="text" name="firstName2" id="firstName2" style="border: 1px solid #6eaaa3"/>
+      <strong>אימייל:</strong> <input type="text" name="email" id="email" style="border: 1px solid #6eaaa3"/>
    <br/>
+    <selections>
+      <strong>מספר טלפון:</strong>
+      <input type="text" name="phone" id="number" style="border: 1px solid #6eaaa3"/><select name="age" id="age" style="border: 1px solid #6eaaa3;">
+         <option value="under13">מתחת לגיל 13</option>
+         <option value="13-18">בין גיל 13 ל-18</option>
+         <option value="18+">מעל גיל 18</option>
+      </select>
+        <br/>
    <strong>מדוע אני נרשם לאתר: </strong>
    <br/>
    <input type="checkbox" name="check3" checked value="אימוץ" id="subject1"/>אני רוצה לאמץ כלב<br/>
@@ -24,9 +32,6 @@
    <input type="radio" name="radio2" value="3" id="animal4"/>3<br/>
    <input type="radio" name="radio2" value="4" id="animal5"/>לא יודע/ת בינתיים<br/>
    <textarea rows="1" cols="20" name="radio1" id="textarea1" placeholder="מספר אחר: " style="border: 1px solid #6eaaa3;"></textarea>
-   <br/>
-   <strong>חיה אחרת:</strong>
-   <textarea rows="1" cols="20" name="radio2" id="textarea2" placeholder="הכנס מלל חופשי" style="border: 1px solid #6eaaa3;"></textarea>
    <br/>
 <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;"/> <br/>
    שם = <%=name %>
