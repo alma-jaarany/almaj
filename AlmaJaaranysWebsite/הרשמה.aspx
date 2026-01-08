@@ -44,8 +44,9 @@
         <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;" />
         <br />
         שם = <%=name %>
-   מקצועות = <%=check3 %>
-   חיות = <%=radio2 %>
-        phonenumber = <%=phonenumber %>
+   אימייל = <%=email %>
+   מספר טלפון = <%=phonenumber %>
+        סיבת הרשמה = <%=check3 %>
+        כמה כלבים = <%=radio2 %>
 </asp:Content>
 

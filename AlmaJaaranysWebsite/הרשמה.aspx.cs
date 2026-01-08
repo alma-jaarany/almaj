@@ -18,7 +18,7 @@ public partial class הרשמה : System.Web.UI.Page
         name = Request.Form["firstName1"];
         email = Request.Form["email"];
         phonenumber = Request.Form["phone1" + "phone2"];
-        check3 = Request.Form["email"];
+        check3 = Request.Form["check3"];
         radio2 = Request.Form["radio2"];
     }
 }
