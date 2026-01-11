@@ -28,6 +28,7 @@
     שם = <%=name %>
     מקצועות = <%=check2 %>
     חיות = <%=radio1 %>
-</asp:Content>
+</asp:Content> 
+
 
 

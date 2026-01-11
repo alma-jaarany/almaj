@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 public partial class הרשמה : System.Web.UI.Page
 {
-    public string name;
+    public string password;
     public string email;
     public string phonenumber;
     public string check3;
@@ -15,7 +15,7 @@ public partial class הרשמה : System.Web.UI.Page
     
     protected void Page_Load(object sender, EventArgs e)
     {
-        name = Request.Form["firstName1"];
+        password = Request.Form["password"];
         email = Request.Form["email"];
         phonenumber = Request.Form["phone1" + "phone2"];
         check3 = Request.Form["check3"];

@@ -5,8 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
     <strong>הרשמה לאתר:</strong>
     <br />
-    <strong>שם פרטי:</strong>
-    <input type="text" name="firstName1" id="firstName" style="border: 1px solid #6eaaa3" />
+    <strong>סיסמה:</strong>
+    <input type="text" name="password" id="password" style="border: 1px solid #6eaaa3" />
     <br />
     <strong>אימייל:</strong>
     <input type="text" name="email" id="email" style="border: 1px solid #6eaaa3" />
@@ -43,7 +43,7 @@
         <br />
         <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;" />
         <br />
-        שם = <%=name %>
+        שם = <%=password %>
    אימייל = <%=email %>
    מספר טלפון = <%=phonenumber %>
         סיבת הרשמה = <%=check3 %>
