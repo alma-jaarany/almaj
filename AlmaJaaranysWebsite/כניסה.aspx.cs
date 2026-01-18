@@ -7,8 +7,12 @@ using System.Web.UI.WebControls;
 
 public partial class כניסה : System.Web.UI.Page
 {
+    public string st = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Page.IsPostBack)
+        { 
+          // קוד הרשמה
+        }
     }
 }
