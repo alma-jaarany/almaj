@@ -15,19 +15,21 @@ public partial class כניסה : System.Web.UI.Page
             string password = Request.Form["password"];
             string email = Request.Form["email"];
 
-            // בדיקת משתמש רגיל
-           string sql =
-              "SELECT * FROM tUsers " +
-              "WHERE Email = '" + email + "' " +
-              "AND UserPassword = '" + password + "'";
+            string sql =
+                "SELECT * FROM tUsers " +
+                "WHERE Email = '" + email + "' " +
+                "AND UserPassword = '" + password + "'";
+
+
             bool userExists = MyAdoHelper.IsExist(sql);
+
             if (!userExists)
             {
                 st = "אימייל או סיסמה שגויים";
             }
             else
             {
-                Response.Redirect("home.aspx");
+                Response.Redirect("דף-הבית.aspx");
             }
 
         }
