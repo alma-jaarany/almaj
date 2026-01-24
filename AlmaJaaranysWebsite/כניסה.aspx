@@ -9,5 +9,6 @@
     <strong>סיסמה:</strong>
 <input type="text" name="password" id="password" style="border: 1px solid #6eaaa3" />
 <br />
+<%=st %>
 </asp:Content>
 
