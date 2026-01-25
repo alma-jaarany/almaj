@@ -38,12 +38,12 @@
         <input type="radio" name="radio2" value="1" id="animal2" />1<br />
         <input type="radio" name="radio2" value="2" id="animal3" />2<br />
         <input type="radio" name="radio2" value="3" id="animal4" />3<br />
-        <input type="radio" name="radio2" value="4" id="animal5" />לא יודע/ת בינתיים<br />
+        <input type="radio" name="radio2" value="idk" id="animal5" />לא יודע/ת בינתיים<br />
         <textarea rows="1" cols="20" name="radio1" id="textarea1" placeholder="מספר אחר: " style="border: 1px solid #6eaaa3;"></textarea>
         <br />
         <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;" />
         <br />
-        שם = <%=password %>
+       סיסמה = <%=password %>
    אימייל = <%=email %>
    מספר טלפון = <%=phonenumber %>
         סיבת הרשמה = <%=check3 %>
