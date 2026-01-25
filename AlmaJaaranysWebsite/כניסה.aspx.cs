@@ -7,18 +7,20 @@ using System.Web.UI.WebControls;
 
 public partial class כניסה : System.Web.UI.Page
 {
+    public string email;
+    public string password;
     public string st = "";
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Page.IsPostBack)
         {
-            string password = Request.Form["password"];
-            string email = Request.Form["email"];
+             password = Request.Form["password"];
+             email = Request.Form["email"];
 
             string sql =
                 "SELECT * FROM tUsers " +
-                "WHERE Email = '" + email + "' " +
-                "AND UserPassword = '" + password + "'";
+                "WHERE email = '" + email + "' " +
+                "AND password = '" + password + "'";
 
 
             bool userExists = MyAdoHelper.IsExist(sql);

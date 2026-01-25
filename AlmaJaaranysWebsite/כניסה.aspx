@@ -11,6 +11,8 @@
 <br />
 <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;" />
 <br />
+    אימייל= <%=email %>
+    סיסמא= <%=password %>
 <%=st %>
 </asp:Content>
 
