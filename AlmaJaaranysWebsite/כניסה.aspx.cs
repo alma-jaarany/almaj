@@ -7,15 +7,13 @@ using System.Web.UI.WebControls;
 
 public partial class כניסה : System.Web.UI.Page
 {
-    public string email;
-    public string password;
     public string st = "";
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Page.IsPostBack)
         {
-             password = Request.Form["password"];
-             email = Request.Form["email"];
+             string password = Request.Form["password"];
+            string email = Request.Form["email"];
 
             string sql =
                 "SELECT * FROM tUsers " +
@@ -31,6 +29,7 @@ public partial class כניסה : System.Web.UI.Page
             }
             else
             {
+                //st = "משתמש רשום";
                 Response.Redirect("דף-הבית.aspx");
             }
 

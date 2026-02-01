@@ -16,7 +16,6 @@
     </asp:ContentPlaceHolder>
 </head>
 <body style="height: 100%; width: 100%;">
-    <form runat="server">
 
 
       
@@ -56,6 +55,5 @@
                 </td>
             </tr>
         </table>
-        </form>
 </body>
 </html>
