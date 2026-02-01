@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 public partial class הרשמה : System.Web.UI.Page
 {
     public string strResult;
-
+    public string st = "";
     public string password;
     public string email;
     public string phonenumber, phonenumber1;
@@ -30,7 +30,20 @@ public partial class הרשמה : System.Web.UI.Page
         string sqlInsert = "Insert into tUsers values(N'" + password + "',N'" + email + "',N'" + phonenumber1+ phonenumber + "',N'" + check3 + "'," + radio2 + ")";
 
         MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
-        strResult = "נרשמת בהצלחה!";
 
+        bool userExists = MyAdoHelper.IsExist(sqlInsert);
+
+        if (!userExists)
+        {
+            st = "נרשמת בהצלחה!";
+            st = "משתמש כבר קיים!";
+            Response.Redirect("כניסה.aspx");
+        }
+        else
+        {
+            st = "משתמש כבר קיים!";
+            Response.Redirect("כניסה.aspx");
+        }
+            strResult = st;
     }
 }
