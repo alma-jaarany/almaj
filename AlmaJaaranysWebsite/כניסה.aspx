@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+        <form runat="server" method="post">
+
     <strong>אימייל:</strong>
 <input type="text" name="email" id="email" style="border: 1px solid #6eaaa3" />
 <br />
@@ -11,6 +13,7 @@
 <br />
 <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;" />
 <br />
+            </form>
 <%=st %>
 </asp:Content>
 
