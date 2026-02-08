@@ -12,27 +12,32 @@ public partial class כניסה : System.Web.UI.Page
     {
         if (Page.IsPostBack)
         {
-             string password = Request.Form["password"];
+            string password = Request.Form["password"];
             string email = Request.Form["email"];
-
-            string sql =
-                "SELECT * FROM tUsers " +
-                "WHERE email = '" + email + "' " +
-                "AND password = '" + password + "'";
-
-
-            bool userExists = MyAdoHelper.IsExist(sql);
-
-            if (!userExists)
+            if (email == "almajaarany@gmail.com" && password == "alma2410")
             {
-                st = "אימייל או סיסמה שגויים";
+                Response.Redirect("מנהל.aspx");
             }
             else
             {
-                //st = "משתמש רשום";
-                Response.Redirect("דף-הבית.aspx");
-            }
+                string sql =
+                    "SELECT * FROM tUsers " +
+                    "WHERE email = '" + email + "' " +
+                    "AND password = '" + password + "'";
 
+
+                bool userExists = MyAdoHelper.IsExist(sql);
+
+                if (!userExists)
+                {
+                    st = "אימייל או סיסמה שגויים";
+                }
+                else
+                {
+                    //st = "משתמש רשום";
+                    Response.Redirect("דף-הבית.aspx");
+                }
+            }
         }
     }
 }
