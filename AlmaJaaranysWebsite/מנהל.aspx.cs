@@ -11,36 +11,41 @@ public partial class מנהל : System.Web.UI.Page
     public string st = "";
     protected void Page_Load(object sender, EventArgs e)
     {
-        string sql = "SELECT * FROM tUsers";
-
-        DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
-
-        if (dt.Rows.Count == 0)
+        if (Page.IsPostBack)
         {
-            st = "אין נתונים";
-        }
-        else
-        {
-            st += "<table border = '1'>";
-            st += "<tr>";
-            st += "<td>סיסמה</td>";
-            st += "<td>אימייל</td>";
-            st += "<td>מספר טלפון</td>";
-            st += "<td>סיבת הרשמה</td>";
-            st += "<td>מספר כלבים</td>";
-            st += "</tr>";
+            string password = Request.Form["password"];
+            string email = Request.Form["email"];
+            string sql = "SELECT * FROM tUsers WHERE " + "password = N'" + password + "' AND " + "email = N'" email + "'";
 
-            for (int i = 0; i < dt.Rows.Count; i++)
+            DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
+
+            if (dt.Rows.Count == 0)
             {
-                st += "<tr>";
-
-                for (int k = 0; k < dt.Columns.Count; k++)
-                {
-                    st += "<td>" + dt.Rows[i][k] + "</td>";
-                }
-                st += "</tr>";
+                st = "אין נתונים";
             }
-            st += "</table>";
+            else
+            {
+                st += "<table border = '1'>";
+                st += "<tr>";
+                st += "<td>סיסמה</td>";
+                st += "<td>אימייל</td>";
+                st += "<td>מספר טלפון</td>";
+                st += "<td>סיבת הרשמה</td>";
+                st += "<td>מספר כלבים</td>";
+                st += "</tr>";
+
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    st += "<tr>";
+
+                    for (int k = 0; k < dt.Columns.Count; k++)
+                    {
+                        st += "<td>" + dt.Rows[i][k] + "</td>";
+                    }
+                    st += "</tr>";
+                }
+                st += "</table>";
+            }
         }
     }
 }

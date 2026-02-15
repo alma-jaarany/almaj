@@ -5,6 +5,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <center>
         <h1> טבלת משתמשים</h1>
+        <form runat="server" method="post">
+<strong>סיסמה:</strong>
+<input type="text" name="password" id="password" style="border: 1px solid #6eaaa3" />
+<br />
+<strong>אימייל:</strong>
+<input type="text" name="email" id="email" style="border: 1px solid #6eaaa3" />
+<br />
+        </form>
         <%=st %>
         <br/ />
     </center>
