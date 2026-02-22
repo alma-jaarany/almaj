@@ -15,8 +15,9 @@ public partial class מנהל : System.Web.UI.Page
         {
             string password = Request.Form["password"];
             string email = Request.Form["email"];
-            string sql = "SELECT * FROM tUsers WHERE " + "password = N'" + password + "' AND " + "email = N'" email + "'";
-
+            string sql = "SELECT * FROM tUsers WHERE " +
+                "password LIKE N'%" + password + "%' AND " +
+                "email LIKE N'%" + email + "%'";
             DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
 
             if (dt.Rows.Count == 0)
