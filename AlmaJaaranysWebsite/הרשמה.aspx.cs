@@ -17,8 +17,8 @@ public partial class הרשמה : System.Web.UI.Page
     
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!Page.IsPostBack)
-            return;
+        if (Page.IsPostBack)
+         
 
         password = Request.Form["password"];
         email = Request.Form["email"];
@@ -27,23 +27,32 @@ public partial class הרשמה : System.Web.UI.Page
         check3 = Request.Form["check3"];
         radio2 = Request.Form["radio2"];
 
-        string sqlInsert = "Insert into tUsers values(N'" + password + "',N'" + email + "',N'" + phonenumber1+ phonenumber + "',N'" + check3 + "'," + radio2 + ")";
 
-        MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
+        string sql =
+     "SELECT * FROM tUsers " +
+     "WHERE Email = N'" + email + "' ";
 
-        bool userExists = MyAdoHelper.IsExist(sqlInsert);
+        bool userExists = MyAdoHelper.IsExist(sql);
 
-        if (!userExists)
+        if (userExists)
         {
-            st = "נרשמת בהצלחה!";
-            st = "משתמש כבר קיים!";
-            Response.Redirect("כניסה.aspx");
+            st = "המשתמש הזה כבר רשום";
         }
         else
         {
-            st = "משתמש כבר קיים!";
-            Response.Redirect("כניסה.aspx");
+
+            string sqlInsert =
+"INSERT INTO tUsers VALUES (" +
+"N'" + password + "'," +
+"N'" + email + "'," +
+"N'" + phonenumber1 + "-" + phonenumber + "'," +
+"N'" + check3 + "'," +
+"N'" + radio2 + "'" +
+")";
+
+            MyAdoHelper.DoQuery("mydb.mdf", sqlInsert);
+            st = "נרשמת בהצלחה!";
+            Response.Redirect("SignIn.aspx");
         }
-            strResult = st;
     }
 }
