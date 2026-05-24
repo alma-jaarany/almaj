@@ -3,8 +3,44 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <script language="javascript">
         function checkAll() {
-            return true;
+            phonErr.innerHTML = "";
+            emailErr.innerHTML = "";
+            passErr.innerHTML = "";
+            f = true;
+
+            f = checkPhoneName() && f;
+            f = checkEmailName() && f;
+            f = checkPassName() && f;
+
+            return f;
         }
+
+        function checkPhoneName() {
+            phone = document.getElementById("number").value;
+            if (phone.length != 7) {
+                phonErr.innerHTML = "אורך מספר הטלפון לא תקין";
+                return false;
+            }
+            return true
+        }
+
+        function checkEmailName() {
+            email = document.getElementById("email").value;
+            if (email.length < 2 || email.length > 30) {
+                emailErr.innerHTML = "כתובת האימייל לא תקינה";
+                return false;
+            }
+            return true
+
+
+            function checkPassName() {
+                pass = document.getElementById("password").value;
+                if (user.length < 2 || user.length > 30) {
+                    passErr.innerHTML = "הסיסמה לא תקינה";
+                    return false;
+                }
+                return true
+            }
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
