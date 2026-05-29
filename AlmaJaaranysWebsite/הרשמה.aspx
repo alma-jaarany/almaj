@@ -44,10 +44,10 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
-    <strong>הרשמה לאתר:</strong>
+    <h1>הרשמה לאתר:</h1>
     <br />
     <form runat="server" method="post" onsubmit="return checkAll();">
-        <table border="0" dir="rtl">
+        <table border="0" dir="rtl" style="margin:auto; text-align:center;">
             <tr>
                 <td>
                     <strong>סיסמה:</strong>
