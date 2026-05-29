@@ -30,23 +30,25 @@
             </tr>
             <tr>
                 <td><a href="אודות.aspx">
-                    <img src="images/אודות.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/אודות2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="גלריה.aspx">
-                    <img src="images/גלריה.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/גלריה2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="דף-הבית.aspx">
-                    <img src="images/דף-הבית.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/דף-הבית2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="הרשמה.aspx">
-                    <img src="images/הרשמה.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/הרשמה2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="חיפוש.aspx">
-                    <img src="images/חיפוש.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/חיפוש2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="יציאה.aspx">
-                    <img src="images/יציאה.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/יציאה2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="כניסה.aspx">
-                    <img src="images/כניסה.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/כניסה2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="מנהל.aspx">
-                    <img src="images/מנהל.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/מנהל2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="עדכון-פרטים.aspx">
-                    <img src="images/עדכון-פרטים.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/עדכון-פרטים2.png" style="width:150px;height:75px;"></a></td>
+                <td><a href="תרומת-כלב.aspx">
+                    <img src="images/תרומת-כלב2.png" style="width:150px;height:75px;"></a></td>
             </tr>
             <tr style="height: 100%;">
                 <td style="background-color:#caece8; height: 100%; direction: rtl; padding-right: 50px; font-size: 20px; color: #6eaaa3; font-family: Assistant;" colspan="9">
