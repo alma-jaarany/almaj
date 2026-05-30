@@ -18,7 +18,7 @@ public partial class כניסה : System.Web.UI.Page
 
             if (email == "almajaarany@gmail.com" && password == "alma2410")
             {
-                
+                Session["user"] = null;
                 Session["manager"] = "ok";
                 Session["level"] = "מנהל";
                 Response.Redirect("מנהל.aspx");

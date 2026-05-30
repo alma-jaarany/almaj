@@ -16,7 +16,7 @@
         }
 
         function checkPhoneName() {
-            phone = document.getElementById("number").value;
+            phone = document.getElementById("number2").value;
             if (phone.length != 7) {
                 phonErr.innerHTML = "אורך מספר הטלפון לא תקין";
                 return false;
@@ -62,10 +62,9 @@
             </tr>
             <tr>
                 <td>
-                    <selections>
                         <strong>מספר טלפון:</strong>
-                        <input type="text" name="phone1" id="number" style="border: 1px solid #6eaaa3" />
-                        <select name="phone2" id="age" style="border: 1px solid #6eaaa3;">
+                        <input type="text" name="phone2" id="number2" style="border: 1px solid #6eaaa3" />
+                        <select name="phone1" id="number1" style="border: 1px solid #6eaaa3;">
                             <option value="0">050</option>
                             <option value="2">052</option>
                             <option value="3">053</option>
@@ -106,6 +105,6 @@
             </tr>
         </table>
     </form>
-    <%=strResult %>
+    <%=st %>
 </asp:Content>
 

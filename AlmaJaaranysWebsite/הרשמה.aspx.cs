@@ -14,23 +14,21 @@ public partial class הרשמה : System.Web.UI.Page
     public string phonenumber, phonenumber1;
     public string check3;
     public string radio2;
-    
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (Page.IsPostBack)
-         
-
-        password = Request.Form["password"];
-        email = Request.Form["email"];
-        phonenumber1 = Request.Form["phone1"];
-        phonenumber = Request.Form["phone2"];
-        check3 = Request.Form["check3"];
-        radio2 = Request.Form["radio2"];
-
+        {
+            password = Request.Form["password"];
+            email = Request.Form["email"];
+            phonenumber1 = Request.Form["phone1"];
+            phonenumber = Request.Form["phone2"];
+            check3 = Request.Form["check3"];
+            radio2 = Request.Form["radio2"];
 
         string sql =
      "SELECT * FROM tUsers " +
-     "WHERE Email = N'" + email + "' ";
+     "WHERE email = N'" + email + "' ";
 
         bool userExists = MyAdoHelper.IsExist(sql);
 
@@ -52,7 +50,8 @@ public partial class הרשמה : System.Web.UI.Page
 
             MyAdoHelper.DoQuery("mydb.mdf", sqlInsert);
             st = "נרשמת בהצלחה!";
-            Response.Redirect("SignIn.aspx");
+            Response.Redirect("כניסה.aspx");
+        }
         }
     }
 }

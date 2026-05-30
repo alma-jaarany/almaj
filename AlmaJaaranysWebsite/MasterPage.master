@@ -35,15 +35,15 @@
                     <img src="images/גלריה2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="דף-הבית.aspx">
                     <img src="images/דף-הבית2.png" style="width:150px;height:75px;"></a></td>
-                <td><a href="הרשמה.aspx">
+                <td><a id="regLink" runat="server" href="הרשמה.aspx">
                     <img src="images/הרשמה2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="חיפוש.aspx">
                     <img src="images/חיפוש2.png" style="width:150px;height:75px;"></a></td>
-                <td><a href="יציאה.aspx">
+                <td><a  id="exitLink" runat="server" href="יציאה.aspx">
                     <img src="images/יציאה2.png" style="width:150px;height:75px;"></a></td>
-                <td><a href="כניסה.aspx">
+                <td><a id="logInLink" runat="server" href="כניסה.aspx">
                     <img src="images/כניסה2.png" style="width:150px;height:75px;"></a></td>
-                <td><a href="מנהל.aspx">
+                <td><a id="managerLink" runat="server" href="מנהל.aspx">
                     <img src="images/מנהל2.png" style="width:150px;height:75px;"></a></td>
                 <td><a href="עדכון-פרטים.aspx">
                     <img src="images/עדכון-פרטים2.png" style="width:150px;height:75px;"></a></td>
