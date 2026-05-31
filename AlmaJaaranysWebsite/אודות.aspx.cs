@@ -10,19 +10,6 @@ public partial class אודות : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
     
-    str = "<table>";
-        for(int i = 0; i <= 10; i++)
-        {
-            str += "<tr>";
-       
-      for(int j = 0; j <= 10; j++) 
-        { str += "<td>";
-           str += i*j; 
-                str += "</td>";
-        }
-       
-            str += "</tr>";
-        }
-    str = "</table>";
+    
     }
 }

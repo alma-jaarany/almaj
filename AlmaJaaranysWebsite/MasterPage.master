@@ -5,8 +5,32 @@
 <html style="height: 100%; width: 100%;">
     <head>
         <title>alma</title>
+        <link rel="icon" href="images/סנופי.png" type="image/x-icon" />
     <style>
+        .top-moving-bar {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
 
+.moving-img {
+    height: 55px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    animation: moveRight 7s linear infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
     .color {
         color: aquamarine;
         background-color:antiquewhite;
@@ -16,7 +40,9 @@
     </asp:ContentPlaceHolder>
 </head>
 <body style="height: 100%; width: 100%;">
-
+    <div class="top-moving-bar">
+    <img src="images/סנופי.png" class="moving-img" />
+</div>
 
       
         <table style="width: 100%; height: 100%;">
