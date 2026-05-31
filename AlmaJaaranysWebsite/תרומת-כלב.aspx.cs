@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,7 +13,6 @@ public partial class _Default : System.Web.UI.Page
      public string st = "";
      public string name;
      public string age;
-     public string bread;
   
       protected void Page_Load(object sender, EventArgs e)
       {
@@ -21,13 +21,11 @@ public partial class _Default : System.Web.UI.Page
 
         name = Request.Form["name"];
         age = Request.Form["age"];
-        bread = Request.Form["bread"];
-        
-        string sqlInsert = "Insert into tUsers values(N'" + name + "',N'" + age + "',N'" + bread + ")";
+        string sqlInsert =
+    "INSERT INTO Dogs (dogName, dogAge) " +
+    "VALUES (N'" + name + "', N'" + age + "')";
 
         MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
-
-        bool userExists = MyAdoHelper.IsExist(sqlInsert);
 
        
         strResult = st;

@@ -15,12 +15,10 @@ public partial class חיפוש : System.Web.UI.Page
         if (Page.IsPostBack)
         {
             string name = Request.Form["name"];
-            string bread = Request.Form["bread"];
             string age = Request.Form["age"];
             string sql = "SELECT * FROM Dogs WHERE " +
-                "name LIKE N'%" + name + "%' AND " +
-                "age LIKE N'%" + age + "%' AND " +
-                "bread LIKE N'%" + bread + "%'";
+                "dogName LIKE N'%" + name + "%' AND " +
+                "dogAge LIKE N'%" + age + "%'";
             DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
 
             if (dt.Rows.Count == 0)
@@ -33,7 +31,6 @@ public partial class חיפוש : System.Web.UI.Page
                 st += "<tr>";
                 st += "<td>שם הכלב:</td>";
                 st += "<td>גיל הכלב:</td>";
-                st += "<td>סוג הכלב:</td>";
                 st += "</tr>";
 
                 for (int i = 0; i < dt.Rows.Count; i++)
