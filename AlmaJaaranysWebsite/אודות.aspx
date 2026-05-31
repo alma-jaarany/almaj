@@ -4,6 +4,41 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
 
-    <img src="images/אודותשוקו.png" style="width: 700px; height: 700px;"/>
-</asp:Content>
+<table style="width: 100%; direction: rtl; text-align: right;">
 
+    <tr>
+
+        <!-- טקסט ימין -->
+        <td style="width: 40%; vertical-align: top; padding: 10px;">
+
+            <h2>טיפה עליי</h2>
+שמי עלמה,<br /> 
+            אני בת 15 וחצי ואני גרה בכפר סבא<br />
+            אני תלמידת כיתת י בתיכון כצנלסון שמרחיבה הנדסת תוכנה ופיזיקה.<br />
+            בזמני החופשי אני משחקת כדורעף במועדון הפועל כפר סבא ליגת נשים ארצית,<br />
+            בנוסף אני נהנת להיפגש עם חברותיי ולבלות זמן עם משפחתי.<br /> 
+            אני אחות בכורה לשני אחים קטנים,<br /> 
+            נועם ואביב, נועם בן 13 בכיתה זואביב רק בן 4 בגן טרום חובה.<br />
+            אנחנו משפחה של 7 נפשות מבחינתי, שני הורי מלי ורועי כמובן ושתי החתולות שלי מאפין ולילי שאימצנו לא מזמן.<br />
+        </td>
+
+        <!-- תמונה -->
+        <td style="width: 20%; text-align: center; vertical-align: top;">
+            <img src="images/אודותשוקו.png" style="width: 650px;" />
+        </td>
+
+        <!-- טקסט שמאל (אם את רוצה שני טקסטים שונים באמת) -->
+        <td style="width: 40%; vertical-align: top; padding: 10px;">
+
+            <h2>בחירת נושא האתר</h2>
+
+            האתר שלי עוסק באימוץ כלבים כי אני אוהבת בעלי חיים...<br />
+            רציתי ליצור מקום שמציג כלבים לאימוץ בצורה נוחה...<br />
+
+        </td>
+
+    </tr>
+
+</table>
+
+</asp:Content>

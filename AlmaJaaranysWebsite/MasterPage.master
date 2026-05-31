@@ -35,6 +35,45 @@
         color: aquamarine;
         background-color:antiquewhite;
     }
+    .menu-btn {
+        width: 150px;
+        height: 75px;
+        cursor: pointer;
+
+        transition: all 0.2s ease;
+
+        box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+        transform: translateY(0);
+    }
+
+    .menu-btn:hover {
+        transform: translateY(-6px) scale(1.05);
+        box-shadow: 0 10px 18px rgba(0,0,0,0.35);
+    }
+
+    .menu-btn:active {
+        transform: translateY(4px) scale(0.95);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .about-container {
+    display: flex;
+    direction: rtl;
+    align-items: flex-start; /* מיישר למעלה */
+    gap: 20px; /* רווח בין תמונה לטקסט */
+    padding: 20px;
+    }
+
+    .about-img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    }
+
+    .about-text {
+    text-align: right;
+    max-width: 600px;
+    }
+
     </style>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -56,25 +95,25 @@
             </tr>
             <tr>
                 <td><a href="אודות.aspx">
-                    <img src="images/אודות2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/אודות2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a href="גלריה.aspx">
-                    <img src="images/גלריה2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/גלריה2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a href="דף-הבית.aspx">
-                    <img src="images/דף-הבית2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/דף-הבית2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a id="regLink" runat="server" href="הרשמה.aspx">
-                    <img src="images/הרשמה2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/הרשמה2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a href="חיפוש.aspx">
-                    <img src="images/חיפוש2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/חיפוש2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a  id="exitLink" runat="server" href="יציאה.aspx">
-                    <img src="images/יציאה2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/יציאה2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a id="logInLink" runat="server" href="כניסה.aspx">
-                    <img src="images/כניסה2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/כניסה2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a id="managerLink" runat="server" href="מנהל.aspx">
-                    <img src="images/מנהל2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/מנהל2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a href="עדכון-פרטים.aspx">
-                    <img src="images/עדכון-פרטים2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/עדכון-פרטים2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a href="תרומת-כלב.aspx">
-                    <img src="images/תרומת-כלב2.png" style="width:150px;height:75px;"></a></td>
+                    <img src="images/תרומת-כלב2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
             </tr>
             <tr style="height: 100%;">
                 <td style="background-color:#caece8; height: 100%; direction: rtl; text-align:center; font-size: 20px; color: #6eaaa3; font-family: Assistant;" colspan="10">
