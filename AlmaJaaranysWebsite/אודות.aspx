@@ -9,7 +9,7 @@
     <tr>
 
         <!-- טקסט ימין -->
-        <td style="width: 40%; vertical-align: top; padding: 10px;">
+        <td style="width: 50%; vertical-align: top; padding: 40px;">
 
             <h2>טיפה עליי</h2>
 שמי עלמה,<br /> 
@@ -23,18 +23,8 @@
         </td>
 
         <!-- תמונה -->
-        <td style="width: 20%; text-align: center; vertical-align: top;">
+        <td style="width: 50%; text-align: center; vertical-align: top;">
             <img src="images/אודותשוקו.png" style="width: 650px;" />
-        </td>
-
-        <!-- טקסט שמאל (אם את רוצה שני טקסטים שונים באמת) -->
-        <td style="width: 40%; vertical-align: top; padding: 10px;">
-
-            <h2>בחירת נושא האתר</h2>
-
-            האתר שלי עוסק באימוץ כלבים כי אני אוהבת בעלי חיים...<br />
-            רציתי ליצור מקום שמציג כלבים לאימוץ בצורה נוחה...<br />
-
         </td>
 
     </tr>
