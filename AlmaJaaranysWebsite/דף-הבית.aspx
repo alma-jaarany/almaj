@@ -2,6 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+    <img src="images/דף-הבית.אוכל.png" style="position:fixed; float:inline-end; left:-153px; top:240px; width:680px; height:680px;"/>
+    <img src="images/דף-הבית.כלבים.png" style="position:fixed; float:inline-end; left:1225px; top:220px; width:680px; height:680px;"/>
 </asp:Content>
 
