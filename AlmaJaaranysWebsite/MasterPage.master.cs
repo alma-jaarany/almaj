@@ -9,32 +9,35 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["manager"] == null)
+        if (Session["manager"] != null)
+        {
+            managerLink.Visible = true;
+            regLink.Visible = false;
+            searchLink.Visible = true;
+            exitLink.Visible = true;
+            logInLink.Visible = false;
+            changeLink.Visible = true;
+            dogLink.Visible = true;
+        }
+        else if(Session["user"] != null)
         {
             managerLink.Visible = false;
-        }
-
-        if (Session["level"] != null &&
-    Session["level"].ToString() == "אורח")
-        {
-            regLink.Visible = true;
-        }
-
-        if (Session["user"] != null || Session["manager"] != null)
-        {
-            exitLink.Visible = true;
             regLink.Visible = false;
+            searchLink.Visible = true;
+            exitLink.Visible = true;
             logInLink.Visible = false;
+            changeLink.Visible = true;
+            dogLink.Visible = true;
         }
         else
         {
-            exitLink.Visible = false;
+            managerLink.Visible = false;
             regLink.Visible = true;
+            searchLink.Visible = false;
+            exitLink.Visible = false;
             logInLink.Visible = true;
+            changeLink.Visible = false;
+            dogLink.Visible = false;
         }
-
-
-
-
     }
 }
