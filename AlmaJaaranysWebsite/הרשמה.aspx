@@ -6,16 +6,17 @@
             phonErr.innerHTML = "";
             emailErr.innerHTML = "";
             passErr.innerHTML = "";
+
             f = true;
 
-            f = checkPhoneName() && f;
-            f = checkEmailName() && f;
-            f = checkPassName() && f;
+            f = checkPhone() && f;
+            f = checkEmail() && f;
+            f = checkPass() && f;
 
             return f;
         }
 
-        function checkPhoneName() {
+        function checkPhone() {
             phone = document.getElementById("number2").value;
             if (phone.length != 7) {
                 phonErr.innerHTML = "אורך מספר הטלפון לא תקין";
@@ -24,23 +25,23 @@
             return true
         }
 
-        function checkEmailName() {
+        function checkEmail() {
             email = document.getElementById("email").value;
-            if (email.length < 2 || email.length > 30) {
+            if (email.length < 10 || email.length > 30) {
                 emailErr.innerHTML = "כתובת האימייל לא תקינה";
                 return false;
             }
             return true
+        }
 
-
-            function checkPassName() {
-                pass = document.getElementById("password").value;
-                if (user.length < 2 || user.length > 30) {
-                    passErr.innerHTML = "הסיסמה לא תקינה";
-                    return false;
-                }
-                return true
+        function checkPass() {
+            pass = document.getElementById("password").value;
+            if (pass.length < 2 || pass.length > 30) {
+                 passErr.innerHTML = "הסיסמה לא תקינה";
+                 return false;
             }
+            return true
+        }
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
@@ -52,12 +53,16 @@
                 <td>
                     <strong>סיסמה:</strong>
                     <input type="text" name="password" id="password" style="border: 1px solid #6eaaa3" />
+                    <br />
+                    <span id="passErr" style="color:red"></span>
                 </td>
             </tr>
             <tr>
                 <td>
                     <strong>אימייל:</strong>
                     <input type="text" name="email" id="email" style="border: 1px solid #6eaaa3" />
+                    <br />
+                    <span id="emailErr" style="color:red"></span>
                 </td>
             </tr>
             <tr>
@@ -72,8 +77,9 @@
                             <option value="055">055</option>
                             <option value="058">058</option>
                             <option value="059">059</option>
-
                         </select>
+                    <br />
+                    <span id="phonErr" style="color:red"></span>
                 </td>
             </tr>
             <tr>

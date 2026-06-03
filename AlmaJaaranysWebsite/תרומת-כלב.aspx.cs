@@ -28,8 +28,6 @@ public partial class _Default : System.Web.UI.Page
     "VALUES (N'" + name + "', N'" + age + "', N'" + bread + "')";
 
         MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
-
-       
         strResult = st;
       }
     }
