@@ -1,14 +1,48 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="תרומת-כלב.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <script language="javascript">
+        function checkAll() {
+            nameErr.innerHTML = "";
+            breadErr.innerHTML = "";
+
+            f = true;
+
+            f = checkName() && f;
+            f = checkBread() && f;
+
+            return f;
+        }
+
+        function checkName() {
+            name = document.getElementById("name").value;
+            if (name.length < 2 || name.length > 10) {
+                nameErr.innerHTML = "אורך שם הכלב לא תקין";
+                return false;
+            }
+            return true
+        }
+
+        function checkBread() {
+            bread = document.getElementById("bread").value;
+            if (bread.length > 15 || bread.length < 2) {
+                breadErr.innerHTML = "אורך שם סוג הכלב לא תקין";
+                return false;
+            }
+            return true
+        }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
+
     <h1>הבאת כלב לאימוץ:</h1>
     <br />
-    <form runat="server" method="post">
+    <form runat="server" method="post" onsubmit="return checkAll();">
     <strong>שם הכלב:</strong>
     <input type="text" name="name" id="name" style="border: 1px solid #6eaaa3" />
     <br />
+        <span id="nameErr" style="color:red"></span>
+        <br />
         <strong>גיל הכלב: </strong>
 <br />
 <input type="radio" name="age" value="0-1" id="animal1" />0-1<br />
@@ -20,6 +54,8 @@
         <strong>סוג הכלב:</strong>
 <input type="text" name="bread" id="bread" style="border: 1px solid #6eaaa3" />
 <br />
+        <span id="breadErr" style="color:red"></span>
+        <br />
  <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;" />
 <br />
         
