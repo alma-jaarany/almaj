@@ -17,7 +17,10 @@
 <input type="radio" name="age" value="8-12" id="animal4" />8-12<br />
 <input type="radio" name="age" value="diff" id="animal" />אחר<br />
     <br />
-        <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;" />
+        <strong>סוג הכלב:</strong>
+<input type="text" name="bread" id="bread" style="border: 1px solid #6eaaa3" />
+<br />
+ <input type="submit" name="submit1" value="שלח" id="submit" style="font-family: Assistant; color: #6eaaa3; border: 1px solid #6eaaa3;" />
 <br />
         
         </form>

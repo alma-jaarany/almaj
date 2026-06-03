@@ -102,8 +102,6 @@
                     <img src="images/כניסה2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a id="managerLink" runat="server" href="מנהל.aspx">
                     <img src="images/מנהל2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
-                <td><a id="changeLink" runat="server" href="עדכון-פרטים.aspx">
-                    <img src="images/עדכון-פרטים2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
                 <td><a id="dogLink" runat="server" href="תרומת-כלב.aspx">
                     <img src="images/תרומת-כלב2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
             </tr>

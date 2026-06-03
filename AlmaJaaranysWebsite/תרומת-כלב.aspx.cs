@@ -13,17 +13,19 @@ public partial class _Default : System.Web.UI.Page
      public string st = "";
      public string name;
      public string age;
-  
-      protected void Page_Load(object sender, EventArgs e)
+     public string bread;
+
+    protected void Page_Load(object sender, EventArgs e)
       {
         if (!Page.IsPostBack)
             return;
 
         name = Request.Form["name"];
         age = Request.Form["age"];
+        bread = Request.Form["bread"];
         string sqlInsert =
-    "INSERT INTO Dogs (dogName, dogAge) " +
-    "VALUES (N'" + name + "', N'" + age + "')";
+    "INSERT INTO Dogs (dogName, dogAge, dogBread) " +
+    "VALUES (N'" + name + "', N'" + age + "', N'" + bread + "')";
 
         MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
 

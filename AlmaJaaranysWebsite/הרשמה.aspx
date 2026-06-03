@@ -65,13 +65,13 @@
                         <strong>מספר טלפון:</strong>
                         <input type="text" name="phone2" id="number2" style="border: 1px solid #6eaaa3" />
                         <select name="phone1" id="number1" style="border: 1px solid #6eaaa3;">
-                            <option value="0">050</option>
-                            <option value="2">052</option>
-                            <option value="3">053</option>
-                            <option value="4">054</option>
-                            <option value="5">055</option>
-                            <option value="8">058</option>
-                            <option value="9">059</option>
+                            <option value="050">050</option>
+                            <option value="052">052</option>
+                            <option value="053">053</option>
+                            <option value="054">054</option>
+                            <option value="055">055</option>
+                            <option value="058">058</option>
+                            <option value="059">059</option>
 
                         </select>
                 </td>

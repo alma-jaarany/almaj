@@ -16,7 +16,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
             searchLink.Visible = true;
             exitLink.Visible = true;
             logInLink.Visible = false;
-            changeLink.Visible = true;
             dogLink.Visible = true;
         }
         else if(Session["user"] != null)
@@ -26,7 +25,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
             searchLink.Visible = true;
             exitLink.Visible = true;
             logInLink.Visible = false;
-            changeLink.Visible = true;
             dogLink.Visible = true;
         }
         else
@@ -36,7 +34,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
             searchLink.Visible = false;
             exitLink.Visible = false;
             logInLink.Visible = true;
-            changeLink.Visible = false;
             dogLink.Visible = false;
         }
     }

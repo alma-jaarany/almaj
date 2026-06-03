@@ -16,8 +16,10 @@ public partial class חיפוש : System.Web.UI.Page
         {
             string name = Request.Form["name"];
             string age = Request.Form["age"];
+            string bread = Request.Form["bread"];
             string sql = "SELECT * FROM Dogs WHERE " +
                 "dogName LIKE N'%" + name + "%' AND " +
+                "dogBread LIKE N'%" + bread + "%' AND " +
                 "dogAge LIKE N'%" + age + "%'";
             DataTable dt = MyAdoHelper.ExecuteDataTable(sql);
 
@@ -31,6 +33,7 @@ public partial class חיפוש : System.Web.UI.Page
                 st += "<tr>";
                 st += "<td>שם הכלב:</td>";
                 st += "<td>גיל הכלב:</td>";
+                st += "<td>סוג הכלב:</td>";
                 st += "</tr>";
 
                 for (int i = 0; i < dt.Rows.Count; i++)
