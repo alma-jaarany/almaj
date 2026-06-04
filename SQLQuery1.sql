@@ -1,6 +1,2 @@
-﻿CREATE TABLE Dogs (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    dogName NVARCHAR(50) NOT NULL,
-    dogAge NVARCHAR(50) NOT NULL,
-    dogBread NVARCHAR(50) NOT NULL
-)
+﻿DROP TABLE tUsers
+EXEC sp_rename 'tUsers_New', 'tUsers'
