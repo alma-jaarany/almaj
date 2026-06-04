@@ -31,6 +31,7 @@ public partial class חיפוש : System.Web.UI.Page
             {
                 st += "<table border = '1'>";
                 st += "<tr>";
+                st += "<td>ID</td>";
                 st += "<td>שם הכלב:</td>";
                 st += "<td>גיל הכלב:</td>";
                 st += "<td>סוג הכלב:</td>";
