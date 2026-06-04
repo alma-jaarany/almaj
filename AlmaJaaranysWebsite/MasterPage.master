@@ -65,13 +65,13 @@
     transform: translateY(4px) scale(0.95); /* "נלחץ פנימה" */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* צל קטן */
 }
-
     </style>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body style="height: 100%; width: 100%;">
     <div class="top-moving-bar">
+        <%=Session["level"] %>
     <img src="images/סנופי.png" class="moving-img" />
 </div>
 
