@@ -45,7 +45,7 @@
         <br />
         <strong>גיל הכלב: </strong>
 <br />
-<input type="radio" name="age" value="0-1" id="animal1" />0-1<br />
+<input type="radio" name="age" checked value="0-1" id="animal1" />0-1<br />
 <input type="radio" name="age" value="2-5" id="animal2" />2-5<br />
 <input type="radio" name="age" value="5-8" id="animal3" />5-8<br />
 <input type="radio" name="age" value="8-12" id="animal4" />8-12<br />
