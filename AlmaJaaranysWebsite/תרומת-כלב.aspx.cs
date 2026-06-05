@@ -23,9 +23,12 @@ public partial class _Default : System.Web.UI.Page
         name = Request.Form["name"];
         age = Request.Form["age"];
         bread = Request.Form["bread"];
+        string dogName = name.Replace("'", "''");
+        string dogAge = age.Replace("'", "''");
+        string dogBread = bread.Replace("'", "''");
         string sqlInsert =
-    "INSERT INTO Dogs (dogName, dogAge, dogBread) " +
-    "VALUES (N'" + name + "', N'" + age + "', N'" + bread + "')";
+        "INSERT INTO Dogs (dogName, dogAge, dogBread) " +
+        "VALUES (N'" + dogName + "', N'" + dogAge + "', N'" + dogBread + "')";
 
         MyAdoHelper.DoQuery("MyDB.mdf", sqlInsert);
         strResult = st;
