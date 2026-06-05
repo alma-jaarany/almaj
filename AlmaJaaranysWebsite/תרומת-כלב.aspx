@@ -52,7 +52,7 @@
 <input type="radio" name="age" value="diff" id="animal" />אחר<br />
     <br />
         <strong>סוג הכלב:</strong>
-<input type="text" name="bread" id="bread" style="border: 1px solid #6eaaa3" />
+<textarea name="bread" id="bread" style="border: 1px solid #6eaaa3"></textarea>
 <br />
         <span id="breadErr" style="color:red"></span>
         <br />
