@@ -23,6 +23,7 @@ public partial class _Default : System.Web.UI.Page
         name = Request.Form["name"];
         age = Request.Form["age"];
         bread = Request.Form["bread"];
+        // החלפת כל גרש בודד בשני גרשים כדי למנוע שגיאות בשאילתת SQL
         string dogName = name.Replace("'", "''");
         string dogAge = age.Replace("'", "''");
         string dogBread = bread.Replace("'", "''");
