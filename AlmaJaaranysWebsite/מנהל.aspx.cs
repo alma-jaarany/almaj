@@ -28,6 +28,7 @@ public partial class מנהל : System.Web.UI.Page
             {
                 st += "<table border = '1'>";
                 st += "<tr>";
+                st += "<td>ID</td>";
                 st += "<td>סיסמה</td>";
                 st += "<td>אימייל</td>";
                 st += "<td>מספר טלפון</td>";

@@ -36,7 +36,7 @@
 
         function checkPass() {
             pass = document.getElementById("password").value;
-            if (pass.length < 2 || pass.length > 30) {
+            if (pass.length < 3 || pass.length > 30) {
                  passErr.innerHTML = "הסיסמה לא תקינה";
                  return false;
             }
