@@ -9,6 +9,10 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["level"] == null )
+        {
+            Session["level"] = "אורח";
+        }
         if (Session["manager"] != null)
         {
             managerLink.Visible = true;
