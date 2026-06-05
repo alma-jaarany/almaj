@@ -5,51 +5,52 @@
 <html style="height: 100%; width: 100%;">
     <head>
         <title>alma</title>
-        <link rel="icon" href="images/סנופי.png" type="image/x-icon" /> <!-- אייקון האתר שמופיע בלשונית הדפדפן -->
+        <link rel="icon" href="images/סנופי.png" type="image/x-icon" /> <!-- favicon - האייקון של האתר -->
 
 <style>
 
 /* שורת עליונה זזה (סנופי) */
 .top-moving-bar {
-    width: 100%; /* רוחב מלא של המסך */
-    height: 60px; /* גובה השורה */
-    background-color: white; /* צבע רקע לבן */
+    width: 100%;
+    height: 60px;
+    background-color: white;
     overflow: hidden; /* מסתיר חלקים שיוצאים מגבולות השורה */
-    position: relative; /* מאפשר מיקום יחסי של אלמנטים פנימיים */
+    position: relative; /* מגדיר שהמיקום של התמונה יהיה ביחס לשורה  */
 }
 
 /* התמונה שזזה בתוך השורה */
 .moving-img {
-    height: 55px; /* גובה התמונה */
+    height: 55px;
     position: absolute; /* מיקום מוחלט ביחס ל-.top-moving-bar */
-    top: 6px; /* מרחק של 6 פיקסלים מהחלק העליון */
+    top: 6px; /* מרחק מהחלק העליון */
     left: 0; /* מתחיל מצד שמאל */
     animation: moveRight 7s linear infinite; /* מפעיל אנימציה למשך 7 שניות, בקצב קבוע, ללא סוף */
 }
 
 /* אנימציה שמזיזה את התמונה משמאל לימין */
+/* קובע איך התמונה תנוע במהלך האנימציה */
 @keyframes moveRight {
     0% {
-        left: 0; /* בתחילת האנימציה התמונה בשמאל */
+        left: 0; /* בתחילת האנימציה בשמאל */
     }
     100% {
-        left: 100%; /* בסוף האנימציה התמונה מגיעה לקצה הימני */
+        left: 100%; /* בסוף האנימציה בקצה הימני */
     }
 }
 
 /* מחלקת צבע להכל */
 .color {
     color: aquamarine; /* צבע הטקסט */
-    background-color: antiquewhite; /* צבע הרקע */
+    background-color: antiquewhite;
 }
 
 /* כפתורי תפריט */
 .menu-btn {
     width: 150px; /* רוחב הכפתור */
     height: 75px; /* גובה הכפתור */
-    cursor: pointer; /* משנה את סמן העכבר ליד */
+    cursor: pointer; /* עושה אצבע מצביעה */
 
-    transition: all 0.2s ease; /* מעבר חלק של כל השינויים במשך 0.2 שניות */
+    transition: all 0.2s ease; /* מעבר חלק של כל השינויים */
 
     box-shadow: 0 4px 6px rgba(0,0,0,0.25); /* צל התחלתי */
     transform: translateY(0); /* מיקום התחלתי ללא הזזה */
@@ -72,8 +73,10 @@
     </asp:ContentPlaceHolder>
 </head>
 <body style="height: 100%; width: 100%;">
+    <div style=" position: fixed; top: 0; width: 100%; text-align: center; font-size: 22px; color: #6eaaa3; font-family: Assistant; background-color: white; z-index: 999;">
+    <%= Session["level"] %>
+</div>
     <div class="top-moving-bar">
-        <%=Session["level"] %>
     <img src="images/סנופי.png" class="moving-img" />
 </div>
 
@@ -108,7 +111,7 @@
                     <img src="images/תרומת-כלב2.png" style="width:150px;height:75px;" class="menu-btn"></a></td>
             </tr>
             <tr style="height: 100%;">
-                <td style="background-color:#caece8; height: 100%; direction: rtl; text-align:center; font-size: 20px; color: #6eaaa3; font-family: Assistant;" colspan="10">
+                <td style="background-color:#caece8; height: 100%; direction: rtl; text-align:center; font-size: 20px; color: #6eaaa3; font-family: Assistant;" colspan="9">
                     <asp:ContentPlaceHolder ID="MainContent" runat="server">
                     </asp:ContentPlaceHolder>
                 </td>
